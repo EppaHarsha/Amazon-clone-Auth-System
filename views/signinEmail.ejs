@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="main">
+        
+            <div>
+            <img src="/amazon.jpg">
+            </div>
+            <div class="boxsignin">
+                <div class="first">
+
+                    <header>
+                        <h2> Sign in</h2>
+                    </header>
+                    <main>
+                        <p>Email or mobile phone number</p>
+                        
+                        <form action="http://localhost:8080/password" method="post"> 
+                            
+                            
+                            <input id="useremail" type="text" name="email">
+                            <% if(error){ %>
+                                <h5 class="error-msg"><%=content %></h5>
+
+                           <% } %>
+                            <input type="submit" value="Continue">
+                        </form>
+                    </main>
+                    
+                    
+                    By continuing you agree to Amazon's
+                    <a class="ConditionsUse"href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM">Conditions of Use</a>
+                    and 
+                    <a class="privacyNote" href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ">Privacy Notice</a>
+                    
+                    
+                    
+                    <a  class="password"href="http://localhost:8080/Forgotpassword">forgot Password?</a>
+                </div>
+                    
+                    <hr>
+           
+
+              <div>
+
+                  <b>Buying for work?</b>
+                  
+               
+               <a class="shopOn" href="https://business.amazon.in/">Shop on Amazon Business</a></div>
+              </div>
+                
+                    <p> New to Amazon</p>
+                    <form action="http://localhost:8080/createAccount" method="get">
+                        <input id="createAma" type="submit" value="Create your Amazon account">
+                    </form>
+                    <hr>
+                
+                <footer>
+                    <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM">Conditions of Use</a> 
+                    <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ">Privacy Notice </a>
+                    <a href="https://www.amazon.in/gp/help/customer/display.html?ie=UTF8&nodeId=508510">Help</a> <br>
+                    <!-- <span class="material-symbols-outlined">
+                        copyright
+                    </span> -->
+                    <P> date afterwards , Amazon.com,Inc. or its affilates</P>
+                    
+                </footer>
+             
+    </div> 
+    
+</body>
+</html>

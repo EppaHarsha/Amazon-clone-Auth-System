@@ -1,0 +1,116 @@
+*{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width:150px;
+    height: 100px;
+}
+.main{
+    width: 400px;
+    height: 430px;
+    border: 1px solid rgb(220, 218, 218);
+    margin: auto;
+    margin-top:-4px;
+    border-radius: 5px;
+    text-align: start;
+}
+.main h3 {
+    text-align: start;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 100;
+
+}
+.main p{
+    text-align: start;
+    margin-left: 27px;
+}
+form input{
+    display: block;
+    margin-left: 25px;
+}
+input[type="text"]{
+    line-height: 1.7;
+    margin-top: 20px;
+    width: 330px;
+    margin-bottom: 20px;
+    text-align: start;
+    padding-left:4px;
+}
+a{
+    text-decoration:none;
+    margin-left:30px;
+}
+input[type="text"]:hover{
+    box-shadow: 1px 1px 6px rgb(29, 196, 230);
+    border: 0.2px solid black;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+input[type="submit"]{
+    height:25px;
+    width:340px;
+    background-color: rgb(255, 190, 0);
+    border: 0px;
+    margin-top:30px;
+    margin-bottom: 20px;
+    border-radius:5px;
+}
+#please-wait{
+    margin-top:10px;
+    font-size:14px;
+    font-weight:20;
+    opacity:0.9;
+}
+a:hover{
+    color: red;
+}
+a{
+    opacity:0.8;
+}
+hr{
+    margin-top: 30px;
+    opacity: 0.3;
+}
+footer a {
+    margin-right: 20px;
+    font-size: 13px;
+    text-decoration:none;
+}
+footer{
+    padding-left: 50px;
+    margin-top: 40px;
+    
+}
+footer p {
+    margin-top:10px;
+    margin-left:10px;
+    font-size:14px;   
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(255, 213, 0);
+}
+#need-help{
+    font-size: 14px;
+    line-height: 1.5;
+}
+#phone-number{
+    display: inline;
+    margin-left: -116px;
+}
+#try-different{
+    margin-left:-2px;
+}
+.phone-number{
+    text-align: start;
+    margin-left: 143px;
+}
+.error-msg{
+    color:red;
+    font-size: 15px;
+    }

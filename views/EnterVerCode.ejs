@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/EnterVerCode.css">
+    <style>
+        .img{
+            width: 12px;
+            height: 12px;
+            margin-left: -100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <img src="/amazon.jpg" alt="error">
+    <div class="main">
+        <h3> Enter verfication code</h3>
+        <p>For your security , we have sent the code to your </p>
+        <p> phone &nbsp;<%=number %></p>
+        <div>
+            <% if(error){ %>
+                <h3 class="error-msg"><%=content%>
+           <% } %>
+
+        </div>
+        <form action="/newpassword" method="post">
+            <input type="text" name="otp_for_verification">
+        <!-- </form> -->
+        <a href="send">Resend code</a>
+        <!-- <img  src="../images/circle-info-solid.png" class="img"> -->
+        <p id="please-wait">please wait for requesting another code</p>
+        <!-- <form> -->
+            <input type="submit" value="Submit code">
+        </form>
+        <div id="need-help">
+            <p>Need help?</p>
+            <p> if you cannot receive the code or if you changed your mobile number or</p>
+            <div class="phone-number">
+                <p id="phone-number"> phone number, &nbsp; </p> <a id="try-different" href="#">try a different way. </a>
+
+            </div>
+
+            
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM">Conditions of Use</a>
+        <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ">Privacy Notice</a>
+        <a href="https://www.amazon.in/gp/help/customer/display.html?ie=UTF8&nodeId=508510">Help</a>
+        <% const date = new Date() %>
+        <% const current_year = date.getFullYear() %>
+        <p> 1996-<%= current_year %>, &nbsp; Amazon.com, Inc.&nbsp;or its affilates</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/verifyNo.css">
+</head>
+<body>
+    <img src="/amazon.jpg">
+    <div class="Veify-No">
+         <h1>Verify Number</h1>
+         <p class="p">A text with a One Time Password(OTP) has been</p>
+         <span>
+             <p class="pa">sent to your Number:<%=data %></p> <a href="http://localhost:8080/Forgotpassword">change</a>
+
+         </span>
+         <% if(error){ %>
+            <h3><%= content %></h3>
+          <%} %>
+         <form action="/signin" method="post">
+            <label for="OTP">Enter OTP</label> <a href="avhmb">Resend OTP</a>
+            <input type="text" id="OTP" name="user_otp">
+            <input type="submit" value="Create your Amazon account">
+         </form>
+         <div class="amazon-con">
+             <p>By creating an account or logging in,you agree to </p>
+             <p>Amazon's <a href="hjhkjhg">Conditions of Use</a> and <a href="kj">Privacy Policy.</a></p>
+
+         </div>
+
+    </div>
+    <hr>
+    <footer>
+        <a href="jh">Conditions of Use</a>
+        <a href="jh">Privacy Notice</a>
+        <a href="kkj">Help</a>
+        <% const date = new Date() %>
+        <% const current_year = date.getFullYear() %>
+        <p> 1996-<%=current_year%> &nbsp; Amazon.com, Inc. &nbsp;or its affilates</p>
+    </footer>
+    
+</body>
+</html>

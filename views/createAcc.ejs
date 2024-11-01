@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/createAccStyle.css">
+</head>
+<body>
+    <img class="img"src="/amazon.jpg">
+    <div class="main">
+
+        <h1>Create Account</h1>
+        <form action="http://localhost:8080/VerifyNumber" method="post">
+            <label for="firstName">Your name</label>
+            <input type="text"id="firstName" placeholder="First and last name" name="username" minlength="1" required>
+            <div class="mobileNo">
+                <b>Mobile number</b> <br>
+                <select>
+                    <option>+91</option>
+                    <option>+1</option>
+                    <option >+61</option>
+                    <option >+49</option>
+                    <option >+33</option>
+                </select>
+            <input id="inputnumber" type="tel"placeholder="Mobile number" name="mobNo"  required>
+            
+        </div> 
+        <input id="inputemail" type="email" placeholder="Enter email" name="email" required>
+            <b class="password">Password</b>
+            <input id="inputPassword" type="password" placeholder="At least 6 characters" name="password" minlength="6" required>
+            
+            <p id="verify">To verify your number,we will send you a text message with a temporary code.Message with a temporary code.Message and data rates may apply.</p>
+            <input type="submit" value="Verify mobile number">
+        </form>
+        
+        
+        <div class="buyingBorder">
+            <b id="Buying">Buying for work?</b>
+            <a id="bussinessAccount" href="bussinessAccount">Create a free business account</a>
+
+        </div>
+       
+        <p id="all">
+            <span class="already-account">Already have an account?</span>
+            <a href="/sign-in" class="sign-in">Sign in</a>
+          </p>
+           
+          <p id="by-creating">
+            By creating an account or logging in, you agree to our Amazon's
+            <a  href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM">Conditions of Use</a> and 
+            <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ">Privacy Policy</a>.
+          </p>
+          
+
+
+
+        
+    </div>
+  
+    <script>
+       const userpassword=document.getElementById("inputPassword");
+        userpassword.addEventListener("input",()=>{
+            if(userpassword.value.length>=6){
+                userpassword.style.borderColor="green";
+            }
+        })
+    </script>
+    </body>
+    </html>
